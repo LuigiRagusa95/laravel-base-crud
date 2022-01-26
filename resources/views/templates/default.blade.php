@@ -11,12 +11,16 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
-@include('components.header')
 
 <body>
-    @yield('content')
+    @include('components.header')
+
+    <main>
+        @yield('content')
+    </main>
+
+    {{-- @include('components.footer') --}}
 </body>
 
-@include('components.footer')
 
 </html>
