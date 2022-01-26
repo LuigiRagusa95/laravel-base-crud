@@ -12,7 +12,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <button class="btn bg-primary  p-0 px-2">
-                        <a class="nav-link p-1 px-2 text-light" href="{{ route('home') }}">Add</a>
+                        <a class="nav-link p-1 px-2 text-light" href="{{ route('comics.create') }}">Add</a>
                     </button>
                 </li>
             </ul>
