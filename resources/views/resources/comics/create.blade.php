@@ -28,9 +28,13 @@
                     <label for="sale_date" class="form-label">Sale Date</label>
                     <input type="text" class="form-control" id="sale_date" name="sale_date">
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <label for="price" class="form-label">Price</label>
-                    <input type="text" class="form-control" id="price">
+                    <input type="text" class="form-control" id="price" name="price">
+                </div>
+                <div class="col-md-3">
+                    <label for="type" class="form-label">Type</label>
+                    <input type="text" class="form-control" id="type" name="type">
                 </div>
                 <div class="col-12 mt-3">
                     <button type="submit" class="btn btn-primary">Create</button>
