@@ -1,3 +1,3 @@
-@extends('layouts.default')
+@extends('templates.default')
 
 @section('title', 'Laravel | Home')
