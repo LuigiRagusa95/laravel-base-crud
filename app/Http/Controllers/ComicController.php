@@ -15,7 +15,10 @@ class ComicController extends Controller
     public function index()
     {
         $comics = Comic::paginate(8);
-        return view('resources.comics.index', compact('comics'));
+        if ($comics) {
+            return view('resources.comics.index', compact('comics'));
+        }
+        abort(404);
     }
 
     /**
@@ -54,7 +57,10 @@ class ComicController extends Controller
     public function show($id)
     {
         $comic = Comic::find($id);
-        return view('resources.comics.show', compact('comic'));
+        if ($comic) {
+            return view('resources.comics.show', compact('comic'));
+        }
+        abort(404);
     }
 
     /**
