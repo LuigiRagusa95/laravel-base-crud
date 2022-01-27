@@ -3,9 +3,9 @@
 @section('title', 'Laravel | Comics')
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-lg p-5">
+        <div class="col p-5">
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -26,7 +26,8 @@
                         <td>{{ $comic->series }}</td>
                         <td>{{ $comic->sale_date }}</td>
                         <td>
-                            <a href="{{ route('comics.show', $comic->id) }}">Show</a>
+                            <a class="mx-2" href="{{ route('comics.show', $comic->id) }}">Show</a>
+                            <a class="mx-2" href="{{ route('comics.edit', $comic->id) }}">Edit</a>
                         </td>
                     </tr>
                     @endforeach
